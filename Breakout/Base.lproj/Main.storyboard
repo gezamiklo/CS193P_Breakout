@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Tug-h3-ZB8">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <scenes>
+        <!--Breakout View Controller-->
+        <scene sceneID="wYi-Oc-kOJ">
+            <objects>
+                <viewController id="Tug-h3-ZB8" customClass="BreakoutViewController" customModule="Breakout" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kNe-08-asd"/>
+                        <viewControllerLayoutGuide type="bottom" id="R7H-Nw-e5C"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7yw-dn-gKc" customClass="GameView" customModule="Breakout" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="s5m-px-IrT" appends="YES" id="j0E-QP-kb2"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cFZ-YU-3nr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="s5m-px-IrT">
+                    <connections>
+                        <action selector="panned:" destination="Tug-h3-ZB8" id="lJ1-Pg-ACh"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="357" y="462"/>
+        </scene>
+    </scenes>
+</document>
